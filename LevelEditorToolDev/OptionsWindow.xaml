@@ -1,0 +1,46 @@
+﻿<Window x:Class="LevelEditorToolDev.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LevelEditorToolDev"
+        mc:Ignorable="d"
+        Title="OptionsWindow" Height="213.83" Width="448.657" Background="#FFD1D1D1" Closed="OnOptionsWindowClosed">
+	
+	<UniformGrid>
+		<Grid  x:Name="OptionGrid">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.10*"/>
+				<ColumnDefinition Width="2*"/>
+				<ColumnDefinition Width="1*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.5*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="0.5*"/>
+			</Grid.RowDefinitions>
+
+			<TextBlock x:Name="TextblockDimensions" Text="  Anzahl der Zeilen und Spalten (1 bis 20):" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+			<TextBlock x:Name="TextblockHeight" Text="  Window Height:" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+			<TextBlock x:Name="TextblockWidth" Text="  Window Position (Top):" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+			<TextBlock Text="  Window Position (Left):" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+			<TextBlock x:Name="TextblockLeft" Text="(in den Kasten die Werte angeben und für jede Angabe Enter drucken)" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="9"/>
+
+			<TextBox Name="TextBoxLeft" Grid.Row="1" Grid.Column="2" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" AcceptsReturn="False"  KeyDown="OnTextBoxKeyDown" Tag="1" Background="White"/>
+
+			<TextBox Name="TextBoxDimensions" Grid.Row="2" Grid.Column="2" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" AcceptsReturn="False" KeyDown="OnTextBoxKeyDown" Tag="2" Background="White"/>
+
+			<TextBox Name="TextBoxHeight" Grid.Row="3" Grid.Column="2" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" AcceptsReturn="False"  KeyDown="OnTextBoxKeyDown" Tag="3" Background="White"/>
+
+			<TextBox Name="TextBoxTop" Grid.Row="4" Grid.Column="2" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" AcceptsReturn="False"  KeyDown="OnTextBoxKeyDown" Tag="4" Background="White"/>
+		</Grid>
+	</UniformGrid>
+</Window>
