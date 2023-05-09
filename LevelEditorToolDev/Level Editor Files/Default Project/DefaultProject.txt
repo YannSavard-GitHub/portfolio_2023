@@ -1,0 +1,1 @@
+initialWindowWidth,671.112,initialWindowHeight,366.779,savedWindow_Left,NaN,savedWindowPos_Top,NaN,dimensionsLevelGrid,10
